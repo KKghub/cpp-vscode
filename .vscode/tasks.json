@@ -6,20 +6,20 @@
         {
             "type": "shell",
             "label": "g++.exe build active file",
-            "command": "C:\\MinGW64\\bin\\g++.exe",
+            "command": "g++.exe",
             "args": [
                 "-g",
                 "-std=c++11",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
-            "options": {
-                "cwd": "C:\\MinGW64\\bin",
-                "env": {
-                    "Path": "C:\\MinGW64\\bin;${env:Path}"
-                }
-            },
+            // "options": {
+            //     "cwd": "C:\\MinGW64\\bin",
+            //     "env": {
+            //         "Path": "C:\\MinGW64\\bin;${env:Path}"
+            //     }
+            // },
             "problemMatcher": [
                 "$gcc"
             ],
@@ -35,14 +35,14 @@
         {
             "type": "shell",
             "label": "g++.exe build and run active file",
-            "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "command": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "args": [],
-            "options": {
-                "cwd": "C:\\MinGW64\\bin",
-                "env": {
-                    "Path": "C:\\MinGW64\\bin;${env:Path}"
-                }
-            },
+            // "options": {
+            //     "cwd": "C:\\MinGW64\\bin",
+            //     "env": {
+            //         "Path": "C:\\MinGW64\\bin;${env:Path}"
+            //     }
+            // },
             "dependsOn": [
                 "g++.exe build active file"
             ],
