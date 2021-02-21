@@ -5,6 +5,7 @@ To get started follow the below steps
 ## Pre-requisites
 * Install C/C++ for Visual Studio Code extension for vscode
 * Install gcc/g++ compiler on your system
+  * You can refer  this link: https://code.visualstudio.com/docs/languages/cpp
 
 
 ## Steps to run
