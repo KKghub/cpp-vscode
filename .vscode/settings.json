@@ -1,7 +1,8 @@
 {
     "files.exclude": {
-        "*.exe": true,
-        "*/*.exe": true,
+        "**/*.exe": true,
+        "**/*.out": true,
+        "**/*.dSYM": true
     },
     "files.associations": {
         "iostream": "cpp",
@@ -21,6 +22,8 @@
         "string_view": "cpp",
         "initializer_list": "cpp",
         "regex": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "queue": "cpp",
+        "tuple": "cpp"
     }
 }

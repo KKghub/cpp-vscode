@@ -1,4 +1,6 @@
 {
+    // These configurations are for gcc only (not msvc or clang compilers)
+    // Make sure gcc/g++ are available in the PATH environment variable
     "configurations": [
         {
             "name": "Win32",
@@ -10,10 +12,31 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            // "compilerPath": "C:/MinGW64/bin/g++.exe",
             "cStandard": "c11",
             "cppStandard": "c++11",
-            "intelliSenseMode": "gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64"
+        },
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "/usr/local/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "macos-gcc-x64"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "linux-gcc-x64"
         }
     ],
     "version": 4
